@@ -1,0 +1,25 @@
+- name: Pull mingdao docker image
+  shell: |
+    docker pull registry.cn-hangzhou.aliyuncs.com/mdpublic/mingdaoyun-community:1.0.0
+    docker pull registry.cn-hangzhou.aliyuncs.com/mdpublic/mingdaoyun-doc:1.0.0
+  
+- name: Download mingdao installation tool
+  shell: |
+    wget -N {{mingdao_download_url}}
+    tar -zxvf mingdaoyun_private_deployment_captain_linux.tar.gz
+    bash ./service.sh start
+  args:
+    chdir: tmp
+
+- name: Create a directory if it does not exist
+  file:
+    path: /usr/local/mingdao
+    state: directory
+
+- name: add startup scripts sys.sh to Server
+  template:
+    src: sys.sh
+    dest: /usr/local/mingdao
+
+- name: add sys.sh to /etc/rc.local
+  shell: echo "/bin/bash /usr/local/mingdao/sys.sh > /usr/local/mingdao/service.log 2>&1" > /etc/rc.local

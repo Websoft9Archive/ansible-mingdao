@@ -1,7 +1,7 @@
 - name: Pull mingdao docker image
   shell: |
-    docker pull registry.cn-hangzhou.aliyuncs.com/mdpublic/mingdaoyun-community:1.0.0
-    docker pull registry.cn-hangzhou.aliyuncs.com/mdpublic/mingdaoyun-doc:1.0.0
+    docker pull docker pull mdpublic/mingdaoyun-community
+    docker pull mdpublic/mingdaoyun-doc
   
 - name: Download mingdao installation tool
   shell: |

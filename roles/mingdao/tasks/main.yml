@@ -3,7 +3,7 @@
     docker pull mdpublic/mingdaoyun-community:1.0.0
     docker pull mdpublic/mingdaoyun-doc:1.0.0
   
-- name: Download mingdao installation tool
+- name: Download mingdao installation tool from {{mingdao_download_url}}
   shell: |
     wget -N {{mingdao_download_url}}
     tar -zxvf mingdaoyun_private_deployment_captain_linux.tar.gz?v=03201354

@@ -1,1 +1,4 @@
 mingdao_download_url: "https://filepub.mingdao.com/private-deployment/v1.0.0/mingdaoyun_private_deployment_captain_linux.tar.gz?v=03201354"
+# suggest Mingdao provide a stabel version, e.g latest
+mingdao_docker_community_version: "1.0.0"
+mingdao_docker_docs_version: "1.0.0"

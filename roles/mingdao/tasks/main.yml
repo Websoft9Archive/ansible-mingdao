@@ -12,7 +12,7 @@
   shell: |
     curl {{mingdao_download_url}} | tar xvz
     cp service.sh /usr/local/mingdao
-    bash ./usr/local/mingdao/service.sh start
+    bash /usr/local/mingdao/service.sh start
   args:
     chdir: /tmp
 

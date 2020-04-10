@@ -5,8 +5,7 @@
   
 - name: Download mingdao installation tool from {{mingdao_download_url}}
   shell: |
-    wget -N {{mingdao_download_url}}
-    tar -zxvf mingdaoyun_private_deployment_captain_linux.tar.gz?v=03201354
+    curl {{mingdao_download_url}} | tar xvz
     bash ./service.sh start
   args:
     chdir: /tmp

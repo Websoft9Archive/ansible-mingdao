@@ -9,7 +9,7 @@
     tar -zxvf mingdaoyun_private_deployment_captain_linux.tar.gz?v=03201354
     bash ./service.sh start
   args:
-    chdir: tmp
+    chdir: /tmp
 
 - name: Create a directory if it does not exist
   file:

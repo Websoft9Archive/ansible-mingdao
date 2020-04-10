@@ -1,3 +1,8 @@
+- name: Create a directory if it does not exist
+  file:
+    path: /usr/local/mingdao
+    state: directory
+    
 - name: Pull mingdao docker image
   shell: |
     docker pull mdpublic/mingdaoyun-community:"{{mingdao_docker_community_version}}"
@@ -6,14 +11,10 @@
 - name: Download mingdao installation tool from {{mingdao_download_url}}
   shell: |
     curl {{mingdao_download_url}} | tar xvz
+    cp service.sh /usr/local/mingdao
     bash ./service.sh start
   args:
     chdir: /tmp
-
-- name: Create a directory if it does not exist
-  file:
-    path: /usr/local/mingdao
-    state: directory
 
 - name: add startup scripts sys.sh to Server
   template:

@@ -11,6 +11,7 @@
 - name: Download mingdao installation tool from {{mingdao_download_url}}
   shell: |
     curl {{mingdao_download_url}} | tar xvz
+    cp mingdaoyun_private_deployment_captain /usr/local/mingdao
     cp service.sh /usr/local/mingdao
     bash /usr/local/mingdao/service.sh start
   args:

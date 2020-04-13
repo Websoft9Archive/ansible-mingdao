@@ -21,4 +21,6 @@
     dest: /usr/local/mingdao
 
 - name: add sys.sh to /etc/rc.local
-  shell: echo "/bin/bash /usr/local/mingdao/sys.sh > /usr/local/mingdao/service.log 2>&1" > /etc/rc.local
+  shell: |
+    echo '#!/bin/bash' > /etc/rc.local
+    echo '/bin/bash /usr/local/mingdao/sys.sh > /usr/local/mingdao/service.log 2>&1' >> /etc/rc.local

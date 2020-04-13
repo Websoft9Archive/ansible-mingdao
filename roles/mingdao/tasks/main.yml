@@ -3,6 +3,9 @@
     path: /usr/local/mingdao
     state: directory
     
+- name: Create a file as the identity file
+  shell: touch first
+    
 - name: Pull mingdao docker image
   shell: |
     docker pull mdpublic/mingdaoyun-community:"{{mingdao_docker_community_version}}"

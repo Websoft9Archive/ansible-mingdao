@@ -4,7 +4,7 @@
     state: directory
     
 - name: Create a file as the identity file
-  shell: touch first
+  shell: touch /usr/local/mingdao/first
     
 - name: Pull mingdao docker image
   shell: |

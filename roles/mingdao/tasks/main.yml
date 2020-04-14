@@ -8,8 +8,8 @@
     
 - name: Pull mingdao docker image
   shell: |
-    docker pull mdpublic/mingdaoyun-community:"{{mingdao_docker_community_version}}"
-    docker pull mdpublic/mingdaoyun-doc:"{{mingdao_docker_doc_version}}"
+    docker pull mdpublic/mingdaoyun-community
+    docker pull mdpublic/mingdaoyun-doc
   
 - name: Download mingdao installation tool from {{mingdao_download_url}}
   shell: |

@@ -27,4 +27,4 @@
   shell: |
     echo '#!/bin/bash' > /etc/rc.local
     echo '/bin/bash /usr/local/mingdao/sys.sh > /usr/local/mingdao/service.log 2>&1' >> /etc/rc.local
-    chmod +x /etc/rc.d/rc.local
+    chmod 755 /etc/rc.local

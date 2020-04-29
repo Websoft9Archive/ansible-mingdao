@@ -50,7 +50,7 @@ wget -N https://raw.githubusercontent.com/Websoft9/ansible-linux/master/scripts/
 
 ## 文档
 
-文档链接：https://support.websoft9.com/docs/redis/zh
+文档链接：https://support.websoft9.com/docs/mingdao
 
 ## FAQ
 

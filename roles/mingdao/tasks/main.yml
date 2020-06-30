@@ -10,7 +10,7 @@
   shell: |
     docker pull mdpublic/mingdaoyun-community
     docker pull mdpublic/mingdaoyun-doc
-    docker tag mdpublic/mingdaoyun-community:latest registry.cn-hangzhou.aliyuncs.com/mdpublic/mingdaoyun-community:1.2.0
+    docker tag mdpublic/mingdaoyun-community:latest registry.cn-hangzhou.aliyuncs.com/mdpublic/mingdaoyun-community:1.3.1
     docker rmi mdpublic/mingdaoyun-community:latest
     docker tag mdpublic/mingdaoyun-doc:latest registry.cn-hangzhou.aliyuncs.com/mdpublic/mingdaoyun-doc:1.0.0
     docker rmi mdpublic/mingdaoyun-doc:latest

@@ -4,8 +4,8 @@ After=network.target
 [Service]
 Type=simple
 ExecStart=/bin/bash /usr/local/mingdao/service.sh start
-ExecStop=/bin/bash /usr/local/mingdao/service.sh stop
-ExecStopPost=/usr/bin/pkill mingdaoyun 
+ExecStop=-/bin/bash /usr/local/mingdao/service.sh stop
+ExecStopPost=-/usr/bin/pkill mingdaoyun 
 PIDFile=/usr/local/mingdao/service.pid
 [Install]
 WantedBy=multi-user.target

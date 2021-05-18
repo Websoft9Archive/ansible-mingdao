@@ -5,4 +5,3 @@ init_application:
     commands: 
       - sudo rm -rf /data/mingdao/
       - sudo rm -f /usr/local/mingdao/first
-      - sudo rm -f /usr/local/mingdao/service.pid

@@ -1,7 +1,7 @@
 
 init_application:
   mingdaoyun:
-    service_before: mingdao.service
     commands: 
       - sudo rm -rf /data/mingdao/
       - sudo rm -f /usr/local/mingdao/first
+      - sudo systemctl restart mingdao

@@ -22,13 +22,15 @@
   args:
     chdir: /tmp
 
-- name: add startup scripts sys.sh to Server
-  template:
-    src: sys.sh
-    dest: /usr/local/mingdao
+- name: Copy mingdao service 
+  copy:
+    src: mingdao.service
+    dest: /lib/systemd/system/mingdao.service
 
-- name: add sys.sh to /etc/rc.local
-  shell: |
-    echo '#!/bin/bash' > /etc/rc.local
-    echo '/bin/bash /usr/local/mingdao/sys.sh > /usr/local/mingdao/service.log 2>&1' >> /etc/rc.local
-    chmod 755 /etc/rc.local
+- name: Restart and Enable mingdao service
+  systemd:
+    state: restarted
+    daemon_reload: yes
+    name: mingdao
+    enabled: yes
+

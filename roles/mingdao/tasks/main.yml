@@ -33,3 +33,11 @@
     name: mingdao
     enabled: yes
 
+# display version 
+- name: Check mingdao version
+  shell: > 
+    sudo echo "mingdao version:" $(docker images |grep mingdaoyun-community |awk '{print $2}') |tee -a /data/logs/install_version.txt
+
+- name: Check mingdao doc version
+  shell: >
+    sudo echo "mingdao doc version:" $(docker images |grep mingdaoyun-doc |awk '{print $2}') |tee -a /data/logs/install_version.txt

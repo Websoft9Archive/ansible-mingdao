@@ -18,7 +18,6 @@
 - name: Download mingdao installation tool from {{mingdao_download_url}}
   shell: |
     curl {{mingdao_download_url}} | tar xvz -C /usr/local/mingdao
-    bash /usr/local/mingdao/service.sh start
   args:
     chdir: /tmp
 

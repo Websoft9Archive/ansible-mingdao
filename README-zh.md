@@ -3,7 +3,7 @@
 
 [English](/README.md) | [简体中文](/README-zh.md)  
 
-本项目是由 [Websoft9](https://www.websoft9.com) 研发的 [Mingdao](https://github.com/mingdaocom/private-deployment/) 自动化安装程序，开发语言是 Ansible。使用本项目，只需要用户在 Linux 上运行一条命令，即可自动化安装 Mingdao，并预配置必要项，让原本复杂的安装和与配置过程变得没有任何技术门槛。
+本项目是由 [Websoft9](https://www.websoft9.com) 研发的 [Mingdao](https://www.mingdao.com/) 自动化安装程序，开发语言是 Ansible。使用本项目，只需要用户在 Linux 上运行一条命令，即可自动化安装 Mingdao，并预配置必要项，让原本复杂的安装和与配置过程变得没有任何技术门槛。
 
 ## 配置要求
 

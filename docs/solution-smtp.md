@@ -15,9 +15,9 @@ Taking **SendGrid's SMTP Service** as an example, refer to the following steps t
    SMTP username: websoft9smtp
    SMTP password: #fdfwwBJ8f    
    ```
-2. Log in MingDao Console.
-3. Enter the SMTP settings.
-![Metabase SMTP](https://libs.websoft9.com/Websoft9/DocsPicture/en/metabase/metabase-smtp-websoft9.png)
-4. Click the **Test Connection**. You will get the feedback *"no errors were..."* if SMTP is valid.
+2. Log in MingDao Console and go to 【Email settings】 at 【System settings】
+   ![Mingdao SMTP](https://libs.websoft9.com/Websoft9/DocsPicture/en/mingdao/mingdao-smtp-websoft9.png)
+
+3. SMTP completed  
 
 More SMTP Service(Gmail, Hotmail, QQ mail, Yahoo mail, SendGrid and so on)  settings or Issues with SMTP, please refer to Websoft9's *[SMTP Guide](https://support.websoft9.com/docs/faq/tech-smtp.html)*

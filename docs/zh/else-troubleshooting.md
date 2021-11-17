@@ -11,7 +11,7 @@ cat /data/mingdao/script/mingdaoyun.log
 docker logs $(docker ps | grep mingdaoyun-community | awk '{print $1}')
 ```
 
-更多与日志香港的操作[参考](https://docs.pd.mingdao.com/deployment/docker-compose/command.html#%E6%97%A5%E5%BF%97)
+更多与日志香港的操作[参考](https://docs.pd.mingdao.com/deployment/docker-compose/command.html#日志)
 
 #### 明道云服务无法启动？
 

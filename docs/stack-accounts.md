@@ -8,16 +8,7 @@ Here are the required username and password for MingDao installation and configu
 
 ## MingDao
 
-* MingDao administrator username: `admin`
-* MingDao administrator password: Get it form the file of your server */credentials/password.txt*
-  > If there no password.txt exist, the administrator password is `admin`
-
-## MySQL
-
-* MySQL administrator username: `root`
-* MySQL administrator password: Get it from the file of your server */credentials/password.txt*  
-
-> If you want to log in MySQL, refer to [MySQL Web interface Management](/admin-mysql.md)
+Set by yourself at [Installation](/stack-installation.md)
 
 ## Linux
 

@@ -25,7 +25,7 @@
    listen 80;
    server_name mingdao.yourdomain.com;  # 此处修改为你的域名
        location / {
-        proxy_pass  http://127.0.0.1:8880; # 此处修改为你的短裤
+        proxy_pass  http://127.0.0.1:8880; # 此处修改为你的端口
    ...
    }
    ```

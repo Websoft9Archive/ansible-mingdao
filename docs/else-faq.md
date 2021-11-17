@@ -1,27 +1,16 @@
 # FAQ
 
-#### How can I enable the debug mode of MingDao service?
+#### Does Mingdaoyun support multiple languages?
 
-```
-systemctl stop rabbitmq-server
-rabbitmq-server console
-```
-
-#### Can I reset password of MingDao by command?
-
-Yes, e.g `rabbitmqctl change_password  admin newpassword`
+Chinese and English
 
 #### If there is no domain name, can I deploy MingDao?
 
-Yes, access MingDao by *http://Server's Internet IP:8161*.
+Yes, access MingDao by *http://Server's Internet IP:38881*.
 
-#### What is the password for the database root user?
+#### What method does this Mingdao deployment?
 
-The password is stored in the server related file `/credentials/password.txt`.
-
-#### Is there a web-base GUI database management tool?
-
-Yes, phpMyAdmin is included. Visit by *http://Server's Internet IP:9090*.
+Docker
 
 #### Is it possible to modify the source path of MingDao?
 
@@ -32,7 +21,7 @@ No.
 Change owner(group) or permissions as below:
 
 ```shell
-chown -R apache.apache /data/wwwroot
+chown -R nginx.nginx /data/wwwroot
 find /data/wwwroot -type d -exec chmod 750 {} \;
 find /data/wwwroot -type f -exec chmod 640 {} \;
 ```

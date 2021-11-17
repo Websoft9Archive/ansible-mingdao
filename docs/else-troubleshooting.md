@@ -6,7 +6,12 @@ If you're having trouble with running MingDao, here is a quick guide to solve mo
 
 #### How can I check the error logs?
 
-You can find the keywords **Failed** or **error** from the logs directory: `/data/logs`
+```
+cat /data/mingdao/script/mingdaoyun.log
+docker logs $(docker ps | grep mingdaoyun-community | awk '{print $1}')
+```
+
+More logs please refer to official docs: [Mingdao Logs](https://docs.pd.mingdao.com/deployment/docker-compose/command.html#日志)
 
 #### Can't start MingDao service?
 
@@ -16,8 +21,8 @@ It is recommended to first check through the command.
 
 ```shell
 # restart MingDao service
-systemctl status rabbitmq
-journalctl -u rabbitmq
+systemctl status mingdao
+journalctl -u mingdao
 
 # view disk space
 df -lh
@@ -25,9 +30,3 @@ df -lh
 # view memory rate
 free -lh
 ```
-
-#### Error in Chrome when modify password?
-
-This error has nothing to do with MingDao server. Just upgrade you local Chrome to solve it.
-
-![chrome error of MingDao](https://libs.websoft9.com/Websoft9/DocsPicture/zh/rabbitmq/rabbitmq-chromeerror-websoft9.png)

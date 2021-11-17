@@ -26,21 +26,6 @@ sudo yum update -y --skip-broken
 
 ## Upgrade MingDao
 
-This deployment solution is based on Docker and so you can upgrade MingDao by the standard process of Docker:  
+Refer to the official docs: [Mingdao upgrade](https://docs.pd.mingdao.com/deployment/docker-compose/standalone/upgrade.html)
 
 > You should complete an image or snapshot backup for instance before upgrade
-
-1. Use **SFTP** to login Server, modify **APP_VERSION** in the **.env** file of MingDao directory
-
-2. Go to the code-server root directory, then pull new images
-   ```
-   cd /data/wwwroot/rabbitmq
-   docker-compose pull
-   ```
-3. Delete old container and recreate new container
-   ```
-   docker-compose down -v
-   docker-compose up -d
-   ```
-
-Refer to the official docs: [Upgrading MingDao](https://www.rabbitmq.com/upgrade.html)

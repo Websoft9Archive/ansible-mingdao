@@ -57,8 +57,14 @@ Different Cloud Platforms' snapshot settings slightly differ. Refer to [Cloud pl
 ```
 The general steps to make a manual backup are as follows:
 
-1. Compress and download the entire directory */data/wwwroot* by SFTP.
-2. Export LAMP's database by [phpMyAdmin](/admin-mysql.md).
-   ![](https://libs.websoft9.com/Websoft9/DocsPicture/en/phpmyadmin/phpmyadmin-export-websoft9.png)
-3. Put the source code file and database file in the same folder, and name it according to the date.
-4. Complete a backup.
+1. Compress and download the entire directory */data/mingdao/script/volume/data/* by SFTP.
+   ```
+   tar -zcvf /backup/mdybak20210320.tar.gz /data/mingdao/script/volume/data/
+   ```
+2. Complete a backup.
+
+### Onlie backup and recover
+
+![](https://docs.pd.mingdao.com/images/docker-compose-standalone-data/193337_9b63776a_7544271.png)  
+
+Refer to official docs: [Backup and Recover](https://docs.pd.mingdao.com/deployment/docker-compose/standalone/data.html)

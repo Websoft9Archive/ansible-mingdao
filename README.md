@@ -1,4 +1,4 @@
-# Mingdao Cloud Installer
+# 明道云 Cloud Installer
 
 ![](https://libs.websoft9.com/common/websott9-cloud-installer.png) 
 
@@ -6,7 +6,7 @@
 
 [English](/README.md) | [简体中文](/README-zh.md)  
 
-**Mingdao Cloud Installer**, developed by [Websoft9](https://www.websoft9.com), is an automatic installation program of [Mingdao](https://www.mingdao.com/) based on Ansible and shell. It helps user install Mingdao and pre-configure required items automatically and users only need to run a command on Linux. It simplifies the complicated installation and initialization process.  
+**明道云 Cloud Installer**, developed by [Websoft9](https://www.websoft9.com), is an automatic installation program of [明道云](https://www.mingdao.com/) based on Ansible and shell. It helps user install 明道云 and pre-configure required items automatically and users only need to run a command on Linux. It simplifies the complicated installation and initialization process.  
 
 ## System Requirement
 
@@ -44,7 +44,7 @@ If the network is broken or blocked, SSH will be interrupted and the installatio
 
 #### Image on Cloud 
 
-Follow our [Mingdao image](https://apps.websoft9.com/mingdao) for installation on major Cloud Platform.
+Follow our [明道云 image](https://apps.websoft9.com/mingdao) for installation on major Cloud Platform.
 
 ## Documentation
 
@@ -63,7 +63,7 @@ This program provided by Websoft9 contains a series of software with separate co
 #### How to install and view the latest release?
 
 This repository install way is Docker isntallation, you can  view the version from [Official URL](https://github.com/mingdaocom/private-deployment).  
-We will check [Release version](https://github.com/Websoft9/ansible-mingdao/releases) regularly. Update and test this project to ensure that users can successfully install the required version of Mingdao.
+We will check [Release version](https://github.com/Websoft9/ansible-mingdao/releases) regularly. Update and test this project to ensure that users can successfully install the required version of 明道云.
 
 #### Can I run this repository on Ansible Tower? 
 

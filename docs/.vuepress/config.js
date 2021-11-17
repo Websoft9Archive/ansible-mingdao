@@ -18,7 +18,7 @@ locales: {
     },
     '/zh/': {
       lang: 'zh-CN',
-      title: 'MingDao 管理员手册',
+      title: '明道云 管理员手册',
       description: '本文档由 Websoft9 公司提供，用于指导用户学习 MingDao 的安装部署与基本运维技术，包括：部署、初始化安装、环境配置、HTTPS、SMTP、备份升级和连接云服务器操作等基本操作。'
     }
 },

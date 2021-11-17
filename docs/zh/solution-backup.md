@@ -63,3 +63,7 @@ sidebarDepth: 3
 ### 在线备份与还原
 
 系统超级管理员可通过右上角头像下拉列表进入【系统配置】，然后在【更多设置】通过访问 安装管理器，在 数据管理 功能中完成数据的在线备份或还原。
+
+![](https://docs.pd.mingdao.com/images/docker-compose-standalone-data/193337_9b63776a_7544271.png)
+
+详细参考[官方备份与还原文档](https://docs.pd.mingdao.com/deployment/docker-compose/standalone/data.html)

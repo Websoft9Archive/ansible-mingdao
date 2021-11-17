@@ -1,5 +1,3 @@
-# CLI
+# 命令工具
 
-明道云 提供了强大的的命令行工具 `rabbitmqctl`  
-
-Erlang 语言提供了便捷的开发调试命令行工具 `erl`  
+更多命令参考[官方文档](https://docs.pd.mingdao.com/deployment/docker-compose/command.html)

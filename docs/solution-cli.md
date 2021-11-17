@@ -1,5 +1,3 @@
 # CLI
 
-Use `rabbitmqctl` to manage MingDao  
-
-Use `erl` which is a Shell for develop and testing Erlang  
+更多命令参考[官方文档](https://docs.pd.mingdao.com/deployment/docker-compose/command.html)

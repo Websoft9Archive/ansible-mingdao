@@ -6,7 +6,12 @@
 
 #### 如何查看错误日志？
 
-日志文件路径为：`/data/logs`。检索关键词 **Failed** 或者 **error** 查看错误
+```
+cat /data/mingdao/script/mingdaoyun.log
+docker logs $(docker ps | grep mingdaoyun-community | awk '{print $1}')
+```
+
+更多与日志香港的操作[参考](https://docs.pd.mingdao.com/deployment/docker-compose/command.html#%E6%97%A5%E5%BF%97)
 
 #### 明道云服务无法启动？
 
@@ -21,13 +26,6 @@ df -lh
 free -lh
 
 # 查看服务状态和日志
-systemctl status rabbitmq
-journalctl -u rabbitmq
+systemctl status mingdao
+journalctl -u mingdao
 ```
-
-#### 在Chrome下修改密码后报错？
-
-这个并不是服务器端的问题，只要更新浏览器即可。
-
-![chrome error of 明道云](https://libs.websoft9.com/Websoft9/DocsPicture/zh/rabbitmq/rabbitmq-chromeerror-websoft9.png)
-

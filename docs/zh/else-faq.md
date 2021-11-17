@@ -2,40 +2,27 @@
 
 #### 明道云 是否支持多语言？
 
-支持
+支持中文和英文
 
 #### 本项目中 明道云 采用何种安装方式？
 
-采用 rpm/deb 包的安装方式
+采用 Docker 部署
 
-#### 如何以调试模式启动明道云服务？
+#### Websoft9 与明道云是什么关系？
 
-```
-systemctl stop rabbitmq-server
-rabbitmq-server console
-```
+Websoft9 是明道云的全球战略合作伙伴，主要在全球的主流云平台发布 **明道云私有部署版（免费）** 
 
-#### 是否可以通过命令行修改明道云后台密码？
+![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/mingdao/shouquanshu.jpg)
 
-可以，`rabbitmqctl change_password  admin newpassword`
+#### 是否可以通过命令行重置明道云后台密码？
+
+暂无方案
 
 #### 如果没有域名是否可以部署 明道云？
 
-可以，访问`http://服务器公网IP` 即可
+可以，访问`http://服务器公网IP:8880` 即可
 
-#### 数据库 root 用户对应的密码是多少？
-
-密码存放在服务器相关文件中：`/credentials/password.txt`
-
-#### 是否有可视化的数据库管理工具？
-
-有，内置phpMyAdmin，访问地址：*http://服务器公网IP:9090*
-
-#### 如何禁止外界访问phpMyAdmin？
-
-连接服务器，编辑 [phpMyAdmin 配置文件](/zh/stack-components.md#phpmyadmin)，将其中的 `Require all granted` 更改为 `Require ip 192.160.1.0`，然后重启 Apache 服务
-
-#### 是否可以修改明道云的源码路径？
+#### 是否可以修改明道云的目录？
 
 不可以
 
@@ -43,7 +30,7 @@ rabbitmq-server console
 
 ```shell
 # 拥有者
-chown -R apache.apache /data/wwwroot/
+chown -R nginx.nginx /data/wwwroot/
 # 读写执行权限
 find /data/wwwroot/ -type d -exec chmod 750 {} \;
 find /data/wwwroot/ -type f -exec chmod 640 {} \;

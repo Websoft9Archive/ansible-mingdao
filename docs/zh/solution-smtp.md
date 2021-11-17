@@ -15,7 +15,7 @@
    SMTP username: websoft9@163.com
    SMTP password: #wwBJ8    //此密码不是邮箱密码，是需要通过163邮箱后台设置去获取的授权码
    ```
-2. 登录 明道云 控制台，打开右上角用户图标下的【系统配置】菜单，再点击【邮件服务设置】开始配置 SMTP
+2. 登录明道云，打开右上角用户图标下的【系统配置】，点击【邮件服务设置】开始配置
    ![明道云 SMTP](https://libs.websoft9.com/Websoft9/DocsPicture/zh/mingdao/mingdao-smtp-websoft9.png)
 
 3. 完成设置

@@ -13,7 +13,7 @@ We offer two schemes for MingDao deployment and results are the same.
 
 For users with experience with cloud servers, to deploy by Image means "one-click deployment".
 
-Websoft9 publishes [MingDao image](https://apps.websoft9.com/rabbitmq) on Cloud Platforms and there are three methods to deploy it.
+Websoft9 publishes [MingDao image](https://apps.websoft9.com/mingdao) on Cloud Platforms and there are three methods to deploy it.
 
 * When **Create New Instance**, you can select the MingDao image as the system boot template.
 * When you **Subscribe MingDao** at Marketplace, the system will ask you to create a new instance for this image in the meantime.
@@ -23,7 +23,7 @@ Websoft9 publishes [MingDao image](https://apps.websoft9.com/rabbitmq) on Cloud 
 
 **To Deploy by Script** means to run a script on your cloud instance to pull the pre-installed package online to your instance and configure it at the same time.
 
-Websoft9 provides the [MingDao ansible automation script](https://github.com/Websoft9/ansible-rabbitmq) on Github. If you are familiar with Ansible, you can deploy the MingDao to the instance automatically.
+Websoft9 provides the [MingDao ansible automation script](https://github.com/Websoft9/ansible-mingdao) on Github. If you are familiar with Ansible, you can deploy the MingDao to the instance automatically.
 
 ## Comparison
 

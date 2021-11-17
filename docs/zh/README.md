@@ -4,7 +4,9 @@ home: false
 
 # 关于
 
-本文档由 [Websoft9](https://www.websoft9.com/) 公司提供，用于指导用户学习 **明道云免费私有部署版** 的安装部署与基本运维技术，包括：明道云部署、初始化安装、环境配置、HTTPS、SMTP、备份升级和连接云服务器操作等基本操作。
+本文档由 [Websoft9](https://www.websoft9.com/) 公司提供，是对[明道云官方文档](https://docs.pd.mingdao.com/)的改写，用于指导用户学习 **明道云免费私有部署版** 的安装部署与基本运维技术，包括：明道云部署、初始化安装、环境配置、HTTPS、SMTP、备份升级和连接云服务器操作等基本操作。  
+
+> 当本文档无法完全找到所需的参考时，请务必阅读：[明道云官方文档](https://docs.pd.mingdao.com/)
 
 [明道云](https://www.mingdao.com/) 私有部署版是明道云 SaaS 服务（mingdao.com）的容器部署版本，它让企业用户在自己的云计算设施上建立零代码应用平台能力。
 
@@ -19,7 +21,7 @@ home: false
 - 用户数不超过 30 个
 - 单个工作表最大行数 10 万行
 
-更多功能对比[参考](https://mingdao.com/pd)官方网页
+更多功能对比[参考](https://mingdao.com/pd)官方网页。
 
 ## 改进
 

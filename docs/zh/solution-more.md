@@ -4,7 +4,7 @@
 
 ## 维护
 
-官方提供了非常全面的[私有版维护文档](https://docs.pd.mingdao.com/)，包括：短信设置、对象存储设置、网络访问、环境变量、服务管理等
+请参考官方提供的：[《私有版维护文档》](https://docs.pd.mingdao.com/)，包括：短信设置、对象存储设置、网络访问、环境变量、服务管理等
 
 ## 域名绑定
 
@@ -18,12 +18,14 @@
 
 2. 使用 SFTP 工具登录云服务器
 
-3. 修改 [Nginx虚拟机主机配置文件](/zh/stack-components.md#nginx)，将其中的 **server_name** 项的值修改为你的域名
+3. 修改 [Nginx虚拟机主机配置文件](/zh/stack-components.md#nginx)，根据需要修改 **server_name** 和 **proxy_pass** 的值
    ```text
    server
    {
    listen 80;
    server_name mingdao.yourdomain.com;  # 此处修改为你的域名
+       location / {
+        proxy_pass  http://127.0.0.1:8880; # 此处修改为你的短裤
    ...
    }
    ```

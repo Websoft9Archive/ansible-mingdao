@@ -11,11 +11,7 @@
   shell: |
     docker pull mdpublic/mingdaoyun-community
     docker pull mdpublic/mingdaoyun-doc
-<<<<<<< HEAD
     docker tag mdpublic/mingdaoyun-community:latest registry.cn-hangzhou.aliyuncs.com/mdpublic/mingdaoyun-community:{{mingdao_version}}
-=======
-    docker tag mdpublic/mingdaoyun-community:latest registry.cn-hangzhou.aliyuncs.com/mdpublic/mingdaoyun-community:2.9.1
->>>>>>> f1b858982c23a7f9f1a440514a516fad61f177f9
     docker rmi mdpublic/mingdaoyun-community:latest
     docker tag mdpublic/mingdaoyun-doc:latest registry.cn-hangzhou.aliyuncs.com/mdpublic/mingdaoyun-doc:{{mingdao_doc_version}}
     docker rmi mdpublic/mingdaoyun-doc:latest

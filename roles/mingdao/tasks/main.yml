@@ -15,7 +15,7 @@
     docker rmi mdpublic/mingdaoyun-community:latest
     docker tag mdpublic/mingdaoyun-doc:latest registry.cn-hangzhou.aliyuncs.com/mdpublic/mingdaoyun-doc:{{mingdao_doc_version}}
     docker rmi mdpublic/mingdaoyun-doc:latest
-  
+    
 - name: Download mingdao installation tool from {{mingdao_download_url}}
   shell: |
     curl {{mingdao_download_url}} | tar xvz -C  /data/wwwroot/mingdao/installer

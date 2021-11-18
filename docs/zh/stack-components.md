@@ -17,9 +17,9 @@ d6fa950fb107   registry.cn-hangzhou.aliyuncs.com/mdpublic/mingdaoyun-doc:1.2.0  
 
 ### 明道云
 
-明道云目录： */data/wwwroot/mingdao*  
-明道云安装管理器目录： */data/wwwroot/mingdao/installer*  
-明道云持久化目录： */data/wwwroot/mingdao/volume*  
+明道云目录： */data/mingdao*  
+明道云安装管理器目录： */usr/local/mingdao*  
+明道云持久化目录： */data/mingdao/script/volume*  
 
 ### Nginx
 

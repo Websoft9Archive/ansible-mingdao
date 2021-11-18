@@ -18,9 +18,9 @@ d6fa950fb107   registry.cn-hangzhou.aliyuncs.com/mdpublic/mingdaoyun-doc:1.2.0  
 
 ### MingDao
 
-MingDao installation directory:  */data/wwwroot/mingdao*  
-MingDao installer directory:  */data/wwwroot/mingdao/installer*  
-MingDao volume:  */data/wwwroot/mingdao/volume*  
+MingDao installation directory:  */data/mingdao*  
+MingDao installer directory:  */usr/local/mingdao*  
+MingDao volume:  */data/mingdao/script/volume*  
 
 ### Nginx
 

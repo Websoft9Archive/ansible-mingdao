@@ -57,3 +57,41 @@
 #### 访问地址的端口号可以不用 **8880** 吗？
 
 可以，但需要在云控制台安全组中，检查 **Inbound（入）规则** 下您所使用的端口确保开启
+
+#### 服务器重启后，程序打不开？
+
+服务器重启后，明道云容器没有启动，使用下面的命令，启动服务，稍等片刻即可打开
+
+```
+cd /data/wwwroot/mingdao/installer/
+ ./service.sh restartall
+
+```
+#### 服务器重启后，服务器IP地址变化，导致工作流等一些服务无法使用
+
+服务器IP变化后，需要修改 docker-compose 配置：
+打开 /data/mingdao/script/docker-compose.yaml，修改 ENV_MINGDAO_HOST 为新的IP，再用重启服务
+
+```
+version: '3'
+
+services:
+  app:
+    image: registry.cn-hangzhou.aliyuncs.com/mdpublic/mingdaoyun-community:2.10.1
+    environment:
+      ENV_MINGDAO_PROTO: "http"
+      ENV_MINGDAO_HOST: "123.57.218.118"  
+      ENV_MINGDAO_PORT: "8880"
+      COMPlus_ThreadPool_ForceMinWorkerThreads: 100
+      COMPlus_ThreadPool_ForceMaxWorkerThreads: 500
+    ports:
+      - 8880:8880
+    volumes:
+      - ./volume/data/:/data/
+      - ./volume/tmp/:/usr/local/MDPrivateDeployment/wwwapi/tmp/
+      - /usr/share/zoneinfo/Etc/GMT-8:/etc/localtime
+      - ../data:/data/mingdao/data
+
+  doc:
+    image: registry.cn-hangzhou.aliyuncs.com/mdpublic/mingdaoyun-doc:1.2.0
+```

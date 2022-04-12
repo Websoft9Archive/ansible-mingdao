@@ -4,8 +4,16 @@
     state: directory
     recurse: yes
     
+- name: Create MingDao link directory
+  file:
+    path: /usr/local/MDPrivateDeployment
+    state: directory
+    recurse: yes
+    
 - name: Create a file as the identity file
-  shell: touch  /data/wwwroot/mingdao/installer/first
+  shell: |
+    touch  /data/wwwroot/mingdao/installer/first
+    ln -sf /data/wwwroot/mingdao/installer /usr/local/MDPrivateDeployment
     
 - name: Pull mingdao docker image & change tag for automatic installation
   shell: |

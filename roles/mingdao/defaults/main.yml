@@ -3,6 +3,7 @@
 # 2021-11-17 更新2.4.1
 # 2021-12-23 更新2.10.1
 # 2022-4-1 更新3.1.0
+# 备用：国内下载地址 ：https://docs.pd.mingdao.com/deployment/docker-compose/standalone/quickstart.html
 
 mingdao_download_url: "https://pdpublic.mingdao.com/private-deployment/3.1.1/mingdaoyun_private_deployment_captain_linux_amd64.tar.gz"
 mingdao_version: "3.1.1"
